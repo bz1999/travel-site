@@ -1,22 +1,8 @@
 import "../styles/styles.css";
-import Person from './modules/Person';
+import MobileMenu from "./modules/MobileMenu";
+
+new MobileMenu();
 
 if (module.hot) {
   module.hot.accept();
 }
-
-
-/* Lesson example code below this line */
-
-let john = new Person("John Citizen", "blue");
-john.greet();
-
-class Adult extends Person {
-  payTax() {
-    console.log("The tax that " + this.name + " owes is zero.");
-  }
-}
-
-let jane = new Adult("Jane Doe", "orange");
-jane.greet();
-jane.payTax();
