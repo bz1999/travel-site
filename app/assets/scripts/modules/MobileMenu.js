@@ -1,21 +1,17 @@
 class MobileMenu {
+  constructor() {
+    this.menuIcon = document.querySelector(".site-header__menu-icon");
+    this.menuContent = document.querySelector(".site-header__menu-content");
+    this.events();
+  }
 
-    constructor() {
-        this.mobileMenu = document.querySelector(".site-header__menu-icon");
+  events() {
+    this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
+  }
 
-        this.events();
-    }
-
-    events() {
-
-        this.mobileMenu.addEventListener("click", () => this.toggleMenuItem());
-        
-    }
-
-    toggleMenuItem() {
-        document.querySelector(".site-header__menu-content").classList.toggle("site-header__menu-content-is-visible");
-    }
-
+  toggleTheMenu() {
+    this.menuContent.classList.toggle("site-header__menu-content-is-visible");
+  }
 }
 
 export default MobileMenu;
