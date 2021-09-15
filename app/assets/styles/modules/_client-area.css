@@ -1,11 +1,25 @@
 .client-area {
-  padding: 30px;
+  padding: 10px;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  @mixin atMedium {
+    padding: 30px;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+  }
 
   &__form {
     display: flex;
   }
 
   &__input {
+    width: 2rem;
     flex: 1;
   }
 
