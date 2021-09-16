@@ -2,7 +2,7 @@ import React from "react";
 
 function MyAmazingComponent() {
   return (
-    <div>
+    <div class="page-section">
       <h1 className="setction-title section-title--blue">
         This is My Amazing React Component
       </h1>
